@@ -1,0 +1,13 @@
+/* 1. Menghilangkan background dan teks biru saat accordion terbuka (aktif) */
+.accordion-button:not(.collapsed) {
+  background-color: transparent; /* Ganti ke warna lain jika perlu, misal: #f8f9fa */
+  color: inherit; /* Mengikuti warna teks standar */
+  box-shadow: none; /* Menghilangkan garis bayangan tipis di bawah header */
+}
+
+/* 2. Menghilangkan ring/glow biru di pinggir tombol saat diklik (focus) */
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125); /* Menjaga warna border tetap netral */
+}
+
