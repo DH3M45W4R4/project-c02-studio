@@ -12,10 +12,139 @@
 
 <main>
   <section id="hero">
-    <h1>Sanggar Senam Sehat Ceria</h1>
-    <p>Tubuh sehat, hati senang. Bergabunglah bersama kami untuk hidup yang lebih aktif dan bugar.</p>
-    <a href="#daftar">Daftar Sekarang</a>
-    <a href="#jadwal">Lihat Jadwal</a>
+    <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 80px 24px;
+    }
+
+    .hero-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    /* Kolom teks */
+    .hero-text h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .hero-text h1 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .hero-text p {
+      margin-bottom: 16px;
+      max-width: 60ch;
+    }
+
+    .hero-text .penutup {
+      font-weight: bold;
+      margin-top: 24px;
+    }
+
+    .tagline {
+      margin-top: 8px;
+    }
+
+    /* Tombol */
+    .hero-buttons {
+      margin-top: 32px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      text-decoration: none;
+      border: 1px solid;
+    }
+
+    /* Kolom gambar (placeholder) */
+    .hero-image {
+      border: 1px solid;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    /* Mobile */
+    @media (max-width: 800px) {
+      .hero {
+        padding: 48px 20px;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .hero-text h1 {
+        font-size: 32px;
+      }
+
+      .hero-image {
+        min-height: 240px;
+        order: -1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero" id="hero">
+    <div class="hero-container">
+
+      <div class="hero-text">
+        <h2>Tentang CO2 Studio</h2>
+        <h1>More Than Just a Place to Exercise.</h1>
+
+        <p>CO2 Studio hadir sebagai ruang untuk bergerak, menjaga kebugaran, dan menemukan keseimbangan antara tubuh dan pikiran.</p>
+
+        <p>Kami percaya bahwa hidup sehat bukan hanya tentang aktivitas fisik, tetapi juga tentang bagaimana kita menikmati setiap gerakan, membangun energi positif, dan menciptakan kualitas hidup yang lebih baik.</p>
+
+        <p>Dengan suasana yang nyaman dan lingkungan yang positif, CO2 Studio menghadirkan berbagai aktivitas kebugaran, mulai dari Yoga, Aerobic, Zumba, serta beragam kelas aktivitas lainnya yang dirancang untuk mendukung gaya hidup aktif dan sehat.</p>
+
+        <p>Kami ingin setiap orang merasa nyaman untuk memulai, berkembang, dan menikmati perjalanan kebugarannya masing-masing.</p>
+
+        <p>Karena bagi kami, setiap gerakan memiliki arti, setiap langkah membawa perubahan, dan setiap individu berhak merasakan hidup yang lebih sehat dan bahagia.</p>
+
+        <p class="penutup">CO2 Studio – Breathe, Move, Feel Good.</p>
+        <p class="tagline">Find Your Balance. Enjoy Every Movement.</p>
+
+        <div class="hero-buttons">
+          <a href="#daftar" class="btn">Daftar Sekarang</a>
+          <a href="#jadwal" class="btn">Lihat Jadwal</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        Area foto / gambar kelas<br>(ganti dengan tag &lt;img&gt;)
+      </div>
+
+    </div>
   </section>
 <section id="manfaat" class="benefits-section py-5">
   <div class="container py-lg-4">
